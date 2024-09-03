@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: dr9z76k2x-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: dr9z76k2x-go 
+  name: dr9z76k2x-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: dr9z76k2x-go 
